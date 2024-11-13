@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDAD16</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <center>
+        <header><h1>Formulario de registro</h1></header>
+    </center>
+    <br>
+    <header>
+        <nav>
+            <ul>
+                <li style="margin: 0 15px;"><a href="#" style="color: white; text-decoration: none; font-weight: bold;">Inicio</a></li>
+                <li style="margin: 0 15px;"><a href="#" style="color: white; text-decoration: none; font-weight: bold;">Acerca de</a></li>
+                <li style="margin: 0 15px;"><a href="#" style="color: white; text-decoration: none; font-weight: bold;">Servicios</a></li>
+                <li style="margin: 0 15px;"><a href="#" style="color: white; text-decoration: none; font-weight: bold;">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="formulario" action="#" method="POST" enctype="multipart/form-data" id="registroForm">
+        <h2>Registro de Usuario</h2>
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Correo Electrónico:</label>
+        <input type="email" name="email" required>
+
+        <label>Contraseña:</label>
+        <input type="password" name="password" required>
+
+        <label>Imagen de Perfil:</label>
+        <input type="file" name="imagen" id="imagen" accept="image/*" onchange="mostrarImagen(event)" required>
+
+        <div class="centrar">
+            <img id="ver-imagen" src="#" alt="Vista previa de la imagen" />
+        </div >
+
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>
